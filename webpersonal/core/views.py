@@ -12,12 +12,9 @@ html_base = """
         """
 
 
-
 def home(request):
-    return HttpResponse(html_base + """
-        <h2>Bienvenidos</h2>
-        <p>Esto es la portada.</p>
- """)
+ return render(request, "core/home.html")
+
 def about(request):
     return HttpResponse(html_base + """
         <h2>Acerca de</h2>
@@ -31,9 +28,10 @@ def contact(request):
         <ul>
             <li><a href="mailto:isanccal@myuax.com">Gmail</a></li>
             <li><a href="https://github.com/Nachosanchezz">Github</a></li>
-            <li><a href="linkedin.com/in/ignacio-sanchez-calabrese">LinkedIn</a></li>
+            <li><a href="https://linkedin.com/in/ignacio-sanchez-calabrese">LinkedIn</a></li>
  </ul>
  """)
+
 
 
          
