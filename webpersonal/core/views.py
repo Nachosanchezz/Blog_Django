@@ -8,6 +8,7 @@ html_base = """
         <li><a href="/">Portada</a></li>
         <li><a href="/about/">Acerca de</a></li>
         <li><a href="/contact/">Contacto</a></li>
+        <li><a href="/portfolio/">Portafolio</a></li>
     </ul>
         """
 
