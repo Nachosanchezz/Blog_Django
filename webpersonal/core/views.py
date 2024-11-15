@@ -13,8 +13,8 @@ html_base = """
         """
 
 
-def home(request):
- return render(request, "core/home.html")
+def portada(request):
+ return render(request, "core/portada.html")
 
 def about(request):
    return render(request, "core/about.html")
@@ -24,6 +24,9 @@ def portfolio(request):
    
 def contact(request):
     return render(request, "core/contact.html")
+
+def home(request):
+    return render(request, "core/home.html")
 
 
 
