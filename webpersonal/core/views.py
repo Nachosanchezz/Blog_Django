@@ -29,9 +29,9 @@ def contact(request):
         <h2>Contacto</h2>
         <p>Aquí os dejo mi mail y mis redes sociales:</p>
         <ul>
-            <li><a href="mailto:isanccal@myuax.com">Email</a></li>
+            <li><a href="mailto:isanccal@myuax.com">Gmail</a></li>
             <li><a href="https://github.com/Nachosanchezz">Github</a></li>
-            <li><a href="https://youtube.com">Youtube</a></li>
+            <li><a href="linkedin.com/in/ignacio-sanchez-calabrese">LinkedIn</a></li>
  </ul>
  """)
 
