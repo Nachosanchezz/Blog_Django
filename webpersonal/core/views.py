@@ -17,30 +17,15 @@ def home(request):
  return render(request, "core/home.html")
 
 def about(request):
-    return HttpResponse(html_base + """
-        <h2>Acerca de</h2>
-        <p>Me llamo Nacho y me encanta Django!</p>
- """)
+   return render(request, "core/about.html")
 
 def portfolio(request):
-    return HttpResponse(html_base + """
-        <h2>Portfolio</h2>
-        <p>Algunos de mis proyectos:</p>
-        <ul>
-            <li><a href="https://github.com/DeNexus-Project/DeNexus_CSV-Analysis">DeNexus CSV Analysis</a></li>
-         </ul>
-    """)
+    return render(request, "core/portfolio.html")
    
 def contact(request):
-    return HttpResponse(html_base + """
-        <h2>Contacto</h2>
-        <p>Aquí os dejo mi mail y mis redes sociales:</p>
-        <ul>
-            <li><a href="mailto:isanccal@myuax.com">Gmail</a></li>
-            <li><a href="https://github.com/Nachosanchezz">Github</a></li>
-            <li><a href="https://linkedin.com/in/ignacio-sanchez-calabrese">LinkedIn</a></li>
- </ul>
- """)
+    return render(request, "core/contact.html")
+
+
 
 
 
