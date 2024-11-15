@@ -7,7 +7,7 @@ def home(request):
 
 def about(request):
     return HttpResponse("""
-        <h1>Mi Web Personal</h1>
-        <h2>Acerca de</h2>
-        <p>Me llamo Nacho y me encanta Django!</p>
+    <h1>Mi Web Personal</h1>
+    <h2>Acerca de</h2>
+    <p>Me llamo Nacho y me encanta Django!</p>
  """)
