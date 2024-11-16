@@ -20,7 +20,7 @@ from core import views
 
 
 urlpatterns = [
-    path('about-me/', views.about, name="about"),
+    path('about/', views.about, name="about"),
     path('portfolio/', views.portfolio, name="portfolio"),
     path('contact/', views.contact, name="contact"),
     path('home/', views.home, name="home"),
