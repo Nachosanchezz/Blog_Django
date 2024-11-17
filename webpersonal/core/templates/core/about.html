@@ -1,11 +1,20 @@
 {% extends 'core/base.html' %}
+{% load static %}
 
 {% block title %}Acerca de{% endblock %}
-{% block content %}
-<h2>Acerca de</h2>
 
-<p>Hola me llamo Nacho y esta es mi web personal para disfrutar de Django.</p>
+{% block background %}
+{% static 'core/img/about-bg.jpg' %}
 {% endblock %}
 
+{% block headers %}
+<h1>Acerca de mí</h1>
+<span class="subheading">Conoce un poco más sobre mi trayectoria</span>
+{% endblock %}
+
+{% block content %}
+<h2>Acerca de</h2>
+<p>Hola, me llamo Nacho y esta es mi web personal para disfrutar de Django.</p>
+{% endblock %}
 
 
