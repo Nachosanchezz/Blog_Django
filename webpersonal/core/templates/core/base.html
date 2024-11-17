@@ -39,7 +39,6 @@
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="navbar-link" href="{% url 'home' %}">Portada:</a>
-                <a class="navbar-brand" href="{% url 'home' %}">Nacho Sánchez</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'about' %}">Acerca de</a>
@@ -51,8 +50,9 @@
                 <a class="nav-link" href="{% url 'contact' %}">Contacto</a>
             </li>
         </ul>
+        {% block content %}{% endblock %}
     </div>
-    {% block content %}{% endblock %}
+    
     
 </body>
 </html>
