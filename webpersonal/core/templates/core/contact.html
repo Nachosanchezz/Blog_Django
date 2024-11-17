@@ -3,17 +3,31 @@
 {% block title %}Contacto{% endblock %}
 
 {% block content %}
-
 <h2>Contacto</h2>
+<p>Aquí os dejo mi correo y mis redes sociales.</p>
 
-<p>Aquí os dejo mi gmail y mis redes sociales.</p>
+<ul class="contact-list">
+    <!-- Gmail -->
+    <li>
+        <a href="mailto:isanccal@myuax.com" target="_blank">
+            <img src="{% static 'core/images/gmail.jpg' %}" alt="Gmail" width="30" height="30">
+        </a>
+    </li>
 
-<ul>
-    <li><a href="mailto:isanccal@myuax.com">Gmail</a></li>
-    <li><a href="https://github.com/Nachosanchezz">Github</a></li>
-    <li><a href="https://linkedin.com/in/ignacio-sanchez-calabrese">LinkedIn</a></li>
+    <!-- GitHub -->
+    <li>
+        <a href="https://github.com/Nachosanchezz" target="_blank">
+            <img src="{% static 'core/images/github.jpg' %}" alt="GitHub" width="30" height="30">
+        </a>
+    </li>
 
+    <!-- LinkedIn -->
+    <li>
+        <a href="https://linkedin.com/in/ignacio-sanchez-calabrese" target="_blank">
+            <img src="{% static 'core/images/linkedin.jpg' %}" alt="LinkedIn" width="30" height="30">
+        </a>
+    </li>
 </ul>
-
 {% endblock %}
+
 
