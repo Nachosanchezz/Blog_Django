@@ -1,0 +1,40 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Portafolio{% endblock %}
+
+{% block background %}{% static 'core/img/portfolio-bg.jpg' %}{%endblock %}
+
+{% block headers %}
+    <h1 style = 'font-size: 40px;'>Portfolio</h1>
+    <span class="subheading">Currículum</span>
+{% endblock %}
+
+{% block content %}
+    <p style="font-size: 20px; text-align: justify;">En esta sección, destaco mi <b>formación 
+        académica</b> y los <b>cursos</b> que he completado a lo largo de mi carrera profesional. 
+        Cada etapa educativa y cada capacitación han sido fundamentales para adquirir los 
+        conocimientos y habilidades necesarias para desempeñar mis funciones con excelencia. 
+        A través de estos estudios y programas de formación, he podido ampliar mi visión en 
+        diversas áreas, mejorar mis competencias y mantenerme actualizado en las tendencias 
+        y mejores prácticas de mi sector. Estas experiencias han complementado mi desarrollo 
+        profesional y me han preparado para enfrentar nuevos retos con una base sólida.
+
+    </p>
+    {% for project in projects %}
+        <!-- Proyecto -->
+            <div class="row project">
+                <div class="col-lg-3 col-md-4 offset-lg-1">
+                    <img class="img-fluid" src="{{project.image.url}}" alt="">
+                </div>
+                <div class="col-lg-7 col-md-8">
+                    <h2 class="section-heading title">{{project.title}}</h2>
+                    <p style="font-size: 20px; text-align: justify;">{{project.description}}</p>
+                    {% if project.link %}
+                        <p><a href="{{project.link}}">Más información</a></p>
+                    {% endif %}
+                </div>
+            </div>
+    {% endfor %}
+{% endblock %}
+
+
