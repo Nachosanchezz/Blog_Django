@@ -11,8 +11,19 @@
 {% endblock %}
 
 {% block content %}
-<h2>Acerca de</h2>
-<p>Hola, me llamo Nacho y esta es mi web personal para disfrutar de Django.</p>
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar"
+            src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Nacho Sánchez</h2>
+        <p>¡Hola! Soy Nacho Sánchez, ingeniero y desarrollador apasionado por la tecnología y el aprendizaje continuo.</p>
+        <p>Me considero una persona curiosa, siempre dispuesta a enfrentar nuevos desafíos y encontrar soluciones innovadoras.</p>
+        <p>En esta página, te invito a descubrir más sobre mi trayectoria, mis proyectos, y cómo mi pasión por la tecnología me ha llevado a crear soluciones que aportan valor. </p>
+    </div>
+</div>
 {% endblock %}
+
 
 

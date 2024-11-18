@@ -46,11 +46,12 @@
             </div>
         </header>
 
+        {% if request.path != "/" %}<hr>{% endif %}
+
 
 
     <main class ="container mt-5">
-        {% block content %}
-        {% endblock %}
+        {% block content %}{% endblock %}
     </main>
 
     <footer class="bg-dark text-white text-center py-3 mt-5">

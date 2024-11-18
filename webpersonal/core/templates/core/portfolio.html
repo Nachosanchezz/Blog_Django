@@ -1,26 +1,44 @@
 {% extends 'core/base.html' %}
 {% load static %}
-
 {% block title %}Portfolio{% endblock %}
-
-{% block background %}{% static 'core/img/portfolio-bg.jpg' %}{% endblock %}
-
+{% block background %}{% static 'core/img/portfolio-bg.jpg' %}{%endblock %}
 {% block headers %}
-<h1>Mi Portfolio</h1>
-<span class="subheading">Descubre mis proyectos y colaboraciones</span>
+ <h1>Portafolio</h1>
+ <span class="subheading">Currículum</span>
 {% endblock %}
-
 {% block content %}
-<h2>Portfolio</h2>
-<p>Este es uno de mis proyectos.</p>
-
-<ul>
-    <li>
-        <a href="https://github.com/DeNexus-Project/DeNexus_CSV-Analysis" target="_blank">
-            DeNexus CSV Analysis
-        </a>
-    </li>
-</ul>
+ <!-- Proyecto -->
+ <div class="row project">
+ <div class="col-lg-3 col-md-4 offset-lg-1">
+ <img class="img-fluid"
+ src="{% static 'core/img/about-bg.jpg' %}" alt="">
+ </div>
+ <div class="col-lg-7 col-md-8">
+ <h2 class="section-heading title">Segundo proyecto</h2>
+ <p>As we got further and further away, it [the Earth]
+ diminished in size. Finally it shrank to the size of a
+marble,
+ the most beautiful you can imagine. That beautiful,
+warm....</p>
+ <p><a href="http://google.com">Más información</a></p>
+ </div>
+ </div>
+ <!-- Proyecto -->
+ <div class="row project">
+ <div class="col-lg-3 col-md-4 offset-lg-1">
+ <img class="img-fluid"
+ src="{% static 'core/img/home-bg.jpg' %}" alt="">
+ </div>
+ <div class="col-lg-7 col-md-8">
+ <h2 class="section-heading title">Primer proyecto</h2>
+ <p>As we got further and further away, it [the Earth]
+ diminished in size. Finally it shrank to the size of a
+marble,
+ the most beautiful you can imagine. That beautiful,
+warm....</p>
+ <p><a href="http://google.com">Más información</a></p>
+ </div>
+ </div>
 {% endblock %}
 
 
