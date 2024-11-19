@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Herramientas que Uso{% endblock %}
+
+{% block background %}{% static 'core/img/tools-bg.png' %}{% endblock %}
+
+{% block headers %}
+<h1>Herramientas que Uso</h1>
+<span class="subheading">Conoce las tecnologías y herramientas que utilizo</span>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <p>Estas son las herramientas y tecnologías que utilizo habitualmente en mi trabajo como desarrollador:</p>
+        <ul class="tools-list">
+            <li><img src="{% static 'core/img/python.png' %}" alt="Python" width="50"> Python</li>
+            <li><img src="{% static 'core/img/django.jpg' %}" alt="Django" width="50"> Django</li>
+            <li><img src="{% static 'core/img/javascript.png' %}" alt="JavaScript" width="50"> JavaScript</li>
+            <li><img src="{% static 'core/img/html.png' %}" alt="HTML" width="50"> HTML5</li>
+            <li><img src="{% static 'core/img/css.jpg' %}" alt="CSS" width="50"> CSS3</li>
+            <li><img src="{% static 'core/img/github.png' %}" alt="GitHub" width="50"> GitHub</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
