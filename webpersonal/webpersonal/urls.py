@@ -19,7 +19,7 @@ from django.urls import path
 from core import views 
 from portfolio import views as portfolio_views
 from django.conf import settings 
-
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.home, name="home"),
@@ -31,6 +31,8 @@ urlpatterns = [
     
 
 ] 
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 if settings.DEBUG:
     from django.conf.urls.static import static
